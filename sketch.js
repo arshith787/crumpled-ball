@@ -12,7 +12,6 @@ function setup() {
    engine = Engine.create();
    world = engine.world;
 
-	//Create the Bodies Here.
   paper = new Paper(100, 600, 10);
 
   ground = new Ground(400, 680, 800, 20);
@@ -48,4 +47,5 @@ function draw() {
 function keyPressed(){
   if(keyCode === UP_ARROW) {
     Matter.Body.applyForce(paper.body, paper.body.position, {x:15, y: -15})
-  }
+}
+}
