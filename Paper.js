@@ -2,36 +2,37 @@ class paper
 {
 	constructor(x,y,r)
 	{
-var options={
-      isStatic:false,
-      restitution:0.3,
-      friction:100,
-      density:1.2
+		var options={
+			isStatic:false,
+			restitution:0.3,
+			friction:100,
+			density:1.2
 
 			
-      }
-      this.r=r;
+			}
+		this.r=r;
 		
-      this.image=loadImage("paper.png");
-      this.body=Bodies.circle(x, y, r, options)
-      World.add(world, this.body);
+		this.image=loadImage("paper.png");
+		this.body=Bodies.circle(x, y, r, options)
+		World.add(world, this.body);
 
 	}
-	display(){
-	
+	display()
+	{
 			
- var paperpos=this.body.position;		
+		var paperpos=this.body.position;		
 
-      push()
-      translate(paperpos.x, paperpos.y);
-      rectMode(CENTER)
-      fill(255)
-      imageMode(CENTER);
+		push()
+		translate(paperpos.x, paperpos.y);
+		rectMode(CENTER)
+		//strokeWeight(4);
+		fill(255)
+		imageMode(CENTER);
 		
-      image(this.image, 0,0,2*this.r, 2*this.r)
+		image(this.image, 0,0,2*this.r, 2*this.r)
 		
-		
-      pop()
+		pop()
 	}
 
+}
 }
