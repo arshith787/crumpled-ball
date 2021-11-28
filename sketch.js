@@ -1,3 +1,5 @@
+
+
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -7,7 +9,7 @@ var dustbinObj, paperObject,groundObject,engine;
 var world;
 
 
-function setup(){
+function setup() {
 	createCanvas(1200, 400);
 	rectMode(CENTER);
     
@@ -18,7 +20,6 @@ function setup(){
 	dustbinObj=new dustbin(1000,450);
 	groundObject=new ground(600,400);
 	
-	
 
 	
 
@@ -27,7 +28,7 @@ function setup(){
 }
 
 
-function draw(){
+function draw() {
   rectMode(CENTER);
   background(100);
  
@@ -47,6 +48,7 @@ function keyPressed(){
 		Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:85,y:-85});
 	}
 }
+
 
 
 
