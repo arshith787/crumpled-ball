@@ -26,19 +26,19 @@ class dustbin
 				
 
 			
-		push();
-		rectMode(CENTER)
+			push();
+			rectMode(CENTER)
 		
-		fill(255)
-        imageMode(CENTER);
+			fill(255)
+            imageMode(CENTER);
            
-        image(this.image,this.centerbody.position.x,this.centerbody.position.y-50,100, 100)
-        rect(this.centerbody.position.x,this.centerbody.position.y,100,20)
-        rect(this.leftbody.position.x,this.leftbody.position.y,20,100)
-        rect(this.rightbody.position.x,this.rightbody.position.y,20,100)
+            image(this.image,this.centerbody.position.x,this.centerbody.position.y-50,100, 100)
+            rect(this.centerbody.position.x,this.centerbody.position.y,100,20)
+            rect(this.leftbody.position.x,this.leftbody.position.y,20,100)
+            rect(this.rightbody.position.x,this.rightbody.position.y,20,100)
 
 
-		pop();
+		    pop();
 			
 	}
 
