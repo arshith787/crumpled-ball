@@ -1,22 +1,36 @@
-class Ground {
-  constructor(x, y, width, height) {
-    var options = {
-      isStatic:true,
-      'restitution':0,
-      'friction':0,
-      'density':1
-    }
-    this.Ground = Bodies.rectangle(x, y, width, height, options);
-    this.width = width;
-    this.height = height;
-      
-    World.add(world, this.ground;
-    }
-  display(){
-    rectMode(CENTER);
+class ground
+{
+	constructor(x,y)
+	{
+		var options={
+			isStatic:true,
+			restitution:0.3,
+			friction:0.5,
+			density:1.2
 
-    fill(255);
+			
+			}
+		
+        this.ground=Bodies.rectangle(x, y,1200,20, options)
+        
+        World.add(world, this.ground);
 
-    rect(this.body.position.x, this.body.position.y, this.width, this. height);
-    }
-  };
+	}
+	display()
+	{
+			
+				
+
+			
+			push();
+			rectMode(CENTER)
+		
+			fill(200,0,255)
+           
+            
+            rect(this.ground.position.x,this.ground.position.y,1200,20)
+		    pop();
+			
+	}
+
+}
